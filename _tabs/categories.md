@@ -1,6 +1,6 @@
 ---
 layout: categories
-title: Projects & Experience
+#title: Projects & Experience
 icon: fas fa-stream
 order: 1
 ---
