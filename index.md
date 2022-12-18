@@ -1,7 +1,6 @@
 ---
 layout: page
 # Index page
-published: true
 ---
 
 <!---Below is the Title--->

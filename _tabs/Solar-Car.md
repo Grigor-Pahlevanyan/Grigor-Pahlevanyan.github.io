@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: post
 icon: fas fa-tag
 order: 1
+title: "Solar Car"
 toc: true
 ---
 
