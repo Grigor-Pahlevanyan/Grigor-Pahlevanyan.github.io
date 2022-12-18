@@ -1,0 +1,18 @@
+I have modified the index.html file
+
+In case if anything goes wrong, you can copy paste the code below, and replace the old index.html. 
+
+---
+layout: home
+# Index page
+---
+
+Why did I do this? 
+Everytime that you would make a change, it would automatically re-create the index.html file in the "_site" which is what is actuallt being hosted. So by removing the code above and 
+manually creating the index.html it no longer has the ability to re-create the file. 
+
+Why do I even wanted to have a custom index.html?
+I don't like the original "home" page and I think that it needs to be called "Experience" instead and be at the very bottom of the side bar. The only way to do this is by forcefully modifing
+the index.html file. Luckly however, all the other tabs are not like the "home" tab and so you can modify them much easier.
+
+Note, you may need to update the index.html everytime you make an update.
