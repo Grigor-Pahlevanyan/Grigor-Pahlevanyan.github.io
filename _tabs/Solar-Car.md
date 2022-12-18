@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: page
 icon: fas fa-tag
 order: 1
 title: "Solar Car"
-toc: true
 ---
 
 # Power Management System
