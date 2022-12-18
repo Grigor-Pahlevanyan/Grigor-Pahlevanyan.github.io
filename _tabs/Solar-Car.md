@@ -28,7 +28,7 @@ The PMS board controls the following boards:
 Our Solar Car runs from 96V - 110V. When using any kind of contactors/relays to control power going towards the motor controller, it is important to use a precharge circuit. The precharge circuit is essentially an RC circuit which ensures the voltage doesn't jump from 0 to 110V but instead it gradually goes up. The motor controller has internal capacitance and the precharge circut has a large resistor which can handle 600W. Together they form an RC circuit. 
 
 <!---Below is the Precharge Board--->
-![Precharge Board](\assets\Solar_Car\Precharge Board.PNG)
+![Precharge Board](\assets\Precharge Board.PNG)
 
 *Figure 2: Precharge Circuit* 
 {: .text-center}
@@ -36,7 +36,7 @@ Our Solar Car runs from 96V - 110V. When using any kind of contactors/relays to 
 Graph 1 below shows the gradual increase in power supplied to the motor controler trhough the precharge circuit. By changing the resistance of the power resistor we can increase/decrease the charge time of the motor controller. 
 
 <!---Below is the Precharge Board--->
-![Precharge Board](\assets\Solar_Car\Voltage for Precharge Circuit.png)
+![Precharge Board](\assets\Voltage for Precharge Circuit.png)
 
 *Graph 1: Precharge Circuit Voltage Rise* 
 {: .text-center}
@@ -50,7 +50,7 @@ Document 1 goes into depth about the specifications of the precharge circuit. It
     </embed>
 </object>
 
-*Figure 3: Sample Precharge Circuit [Image from here](https://www.sensata.com/calculator/precharge)* 
+*Figure 3: Sample Precharge Circuit [Reference](https://www.sensata.com/calculator/precharge)* 
 {: .text-center}
 
 ## Automatic Transfer Switch (ATS) Circuit
@@ -62,18 +62,23 @@ The ATS circuit is mainly used during the startup and shutdown process of the ca
 The video below goes into depth about 3 prototypes that I have created for the ATS circuit using NI Multisim.
 
 <!---Below is the ATS Selection--->
-[![ATS Selection on NI Multisim](\assets\Solar_Car\Image of ATS Video.png)](https://www.youtube.com/watch?v=1juHLBlT9ew "ATS Selection on NI Multisim")
+[![ATS Selection on NI Multisim](\assets\Image of ATS Video.png)](https://www.youtube.com/watch?v=1juHLBlT9ew "ATS Selection on NI Multisim")
 
 *Video 1: ATS Circuit Selection* 
 {: .text-center}
 
 # Solar Cells and Battery 
 
-
+<!-- Below is a PDF embeddedin HTML (Solar Array) -->
+<object data="\assets\Solar Array Arrangement (Website).pdf" type="application/pdf" width="800px" height="700px">
+    <embed src="\assets\Solar Array Arrangement (Website).pdf" type="application/pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://docs.google.com/document/d/1SegDb1yk6t7bbe3hqcD_YXeEGmFr10wR-FJ8LDK_kkk/edit?usp=sharing">Download PDF</a>.</p>
+    </embed>
+</object>
 
 <!-- Below is a PDF embeddedin HTML (Electrical Architecture) -->
-<object data="\assets\Solar_Car\Solar Car Electrical Architecture.pdf" type="application/pdf" width="800px" height="700px">
-    <embed src="\assets\Solar_Car\Solar Car Electrical Architecture.pdf" type="application/pdf">
+<object data="\assets\Solar Car Electrical Architecture.pdf" type="application/pdf" width="800px" height="700px">
+    <embed src="\assets\Solar Car Electrical Architecture.pdf" type="application/pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/16gof9EuUTP6VzCcDnWPZcbqoqPK46Ygf/view?usp=sharing">Download PDF</a>.</p>
     </embed>
 </object>
