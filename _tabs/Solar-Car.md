@@ -121,6 +121,6 @@ One of the challenges was to set up the system in such a way, that you could hav
 Below is my latest iteration of the PMS board schematic. At the top left corner is the microcontroller (MCU) with all the connections that interact with the rest of the circuits. At the bottom left corner is the precharge circuit. At the bottom right corner is the circuit for the AUX battery. Above that is the discharge circuit, and at the top right corner is the remains of the ATS circuit. Unfortunately the regulations of the race have changed since the start of my work and much of my work is starting all over again. For example, the ATS which I've spoken about previously is no longer needed and we will use the main battery in parallel with the solar panels all to power 95% of the car at all times. The Aux battery will only be used for the horn, radio and non-major additional features. As you can see on the top right corner, the main battery which is then dropped down to 12V will power all of those boards on the right.
 
 <!-- Below is a PDF embeddedin HTML (Altium Design) -->
-<object data="\assets\img\Solar-Car\Electrical Architecture.png" type="application/pdf" width="800px" height="700px"></object>
+<object data="assets\img\Solar-Car\Altium_design.pdf" type="application/pdf" width="800px" height="700px"></object>
 *Figure 7: Altium Designer Schematic* 
 {: .text-center}
