@@ -74,8 +74,6 @@ Microcontroller                                   |  AC to DC converter & 120V t
 
 #### Arduino Main Code C/C++
 
-I've used Timers 
-
 ```c++
 #include <AccelStepper.h>
 #include <TFMPlus.h>                          // Include TFMini Plus Library v1.5.0

@@ -124,3 +124,9 @@ Below is my latest iteration of the PMS board schematic. At the top left corner 
 <object data="\assets\img\Solar-Car\Altium_design.pdf" type="application/pdf" width="800px" height="700px"></object>
 *Figure 7: Altium Designer Schematic* 
 {: .text-center}
+
+<object data="\assets\img\Solar-Car\Altium_design.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="\assets\img\Solar-Car\Altium_design.pdf">
+        <p>This browser does not support PDFs.</p>
+    </embed>
+</object>
