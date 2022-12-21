@@ -1,6 +1,5 @@
 ---
 title: Smart Safety Seat
-categories: [Personal Projects, Smart Safety Seat]
 ---
 
-Here is my post on Smart Seat!
+post general and eye catching information about my project so the viewer is motivated to view the specific page about it.
