@@ -8,7 +8,7 @@ title: "Smart Safety Seat"
 ## Background Info
 I have made a car seat which can absorb a portion of the impact during a collision and save drivers and passengers from fatal accidents. The seat is not fixed to the ground, instead it is connected to a rail which is mechanically supported by springs that engage during an accident. During a sudden stop the driver will expereince a big impulse due to their inertia, the smart safety seat will provide the passengers with more time to stop their forward moving velocity. This means the impulse of the collision experienced by the passengers will be less. instead of having 1 second to absorb the impact, the passenger will have 2 seconds which is double the time and half the impact per second of the original accident. 
 
-<!---Below is the Smart Seat Prototype Video--->
+<!---Below is the Smart Seat Prototype Video... --->
 [![Smart Safety Seat Prototype Video](\assets\img\Smart-Seat\Smart Saefty Seat Video.png)](https://youtu.be/tbnBGMlRg1M "Smart Safety Seat Prototype Video")
 *Video 1: Smart Safety Seat Prototype Video* 
 {: .text-center}
