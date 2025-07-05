@@ -3,8 +3,6 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
 
-console.log('main.jsx: Starting application...');
-
 // Add error handling
 window.addEventListener('error', (e) => {
   console.error('Global error:', e.error);
