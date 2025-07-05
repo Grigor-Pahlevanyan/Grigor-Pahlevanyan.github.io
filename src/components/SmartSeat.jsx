@@ -1,4 +1,4 @@
-import { ExternalLinkIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
+import { ArrowTopRightOnSquareIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
 
 const SmartSeat = () => {
   const project = {
@@ -101,7 +101,7 @@ const SmartSeat = () => {
                 className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25"
               >
                 View Full Project
-                <ExternalLinkIcon className="w-5 h-5" />
+                <ArrowTopRightOnSquareIcon className="w-5 h-5" />
               </a>
             </div>
           </div>

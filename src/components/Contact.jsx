@@ -2,10 +2,37 @@ import {
   MapPinIcon, 
   EnvelopeIcon, 
   AcademicCapIcon, 
-  GlobeAltIcon 
+  GlobeAltIcon,
+  PaperAirplaneIcon,
+  UserIcon,
+  ChatBubbleLeftIcon
 } from '@heroicons/react/24/outline';
+import { useState } from 'react';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Create mailto link with form data
+    const mailtoLink = `mailto:pahlevag@mcmaster.ca?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+    window.location.href = mailtoLink;
+  };
+
   const contactInfo = [
     {
       icon: MapPinIcon,
@@ -54,15 +81,25 @@ const Contact = () => {
         </svg>
       ),
       color: "hover:text-blue-400"
+    },
+    {
+      name: "Behance",
+      url: "https://www.behance.net/grigorpahlevanyan",
+      icon: (
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M0 7.5v9c0 .8.7 1.5 1.5 1.5H9c3.6 0 6-2.4 6-6s-2.4-6-6-6H1.5C.7 6 0 6.7 0 7.5zm3 1.5h6c1.8 0 3 1.2 3 3s-1.2 3-3 3H3V9zm12-3h6v1.5h-6V6zm0 12h6v1.5h-6V18zm0-6h6c1.8 0 3 1.2 3 3s-1.2 3-3 3h-3v-6z"/>
+        </svg>
+      ),
+      color: "hover:text-purple-400"
     }
   ];
 
   return (
-    <section id="contact" className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black py-20">
+    <section id="contact" className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 py-20">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Contact <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">Me</span>
+            Get In <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">Touch</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-green-400 mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -70,78 +107,171 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-gray-700/50">
-            <h3 className="text-2xl font-bold text-white mb-8 text-center">Get In Touch</h3>
-            
-            {/* Contact Information Grid */}
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              {contactInfo.map((info, index) => (
-                <div key={index} className="group">
-                  {info.href ? (
-                    <a 
-                      href={info.href}
-                      className="flex items-center space-x-4 p-4 bg-gray-700/30 rounded-xl border border-gray-600/50 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
-                    >
-                      <div className={`p-3 rounded-full bg-gray-600/50 ${info.color} group-hover:bg-gray-600/70 transition-colors duration-300`}>
-                        <info.icon className="w-6 h-6" />
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Contact Information */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
+              <div className="space-y-4">
+                {contactInfo.map((info, index) => (
+                  <div key={index} className="group">
+                    {info.href ? (
+                      <a 
+                        href={info.href}
+                        className="flex items-center space-x-4 p-4 bg-gray-700/30 rounded-xl border border-gray-600/50 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
+                      >
+                        <div className={`p-3 rounded-full bg-gray-600/50 ${info.color} group-hover:bg-gray-600/70 transition-colors duration-300`}>
+                          <info.icon className="w-6 h-6" />
+                        </div>
+                        <div>
+                          <p className="text-gray-400 text-sm font-medium">{info.label}</p>
+                          <p className="text-white font-semibold group-hover:text-blue-400 transition-colors duration-300">{info.value}</p>
+                        </div>
+                      </a>
+                    ) : (
+                      <div className="flex items-center space-x-4 p-4 bg-gray-700/30 rounded-xl border border-gray-600/50">
+                        <div className={`p-3 rounded-full bg-gray-600/50 ${info.color}`}>
+                          <info.icon className="w-6 h-6" />
+                        </div>
+                        <div>
+                          <p className="text-gray-400 text-sm font-medium">{info.label}</p>
+                          <p className="text-white font-semibold">{info.value}</p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="text-gray-400 text-sm font-medium">{info.label}</p>
-                        <p className="text-white font-semibold group-hover:text-blue-400 transition-colors duration-300">{info.value}</p>
-                      </div>
-                    </a>
-                  ) : (
-                    <div className="flex items-center space-x-4 p-4 bg-gray-700/30 rounded-xl border border-gray-600/50">
-                      <div className={`p-3 rounded-full bg-gray-600/50 ${info.color}`}>
-                        <info.icon className="w-6 h-6" />
-                      </div>
-                      <div>
-                        <p className="text-gray-400 text-sm font-medium">{info.label}</p>
-                        <p className="text-white font-semibold">{info.value}</p>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              ))}
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
 
             {/* Social Links */}
-            <div className="text-center">
+            <div>
               <h4 className="text-xl font-semibold text-white mb-6">Connect With Me</h4>
-              <div className="flex justify-center space-x-6">
+              <div className="space-y-3">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`group flex items-center space-x-2 px-6 py-3 bg-gray-700/50 text-gray-300 rounded-full border border-gray-600/50 hover:border-blue-500/50 ${social.color} transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg`}
+                    className={`group flex items-center space-x-4 p-4 bg-gray-700/30 text-gray-300 rounded-xl border border-gray-600/50 hover:border-blue-500/50 ${social.color} transition-all duration-300 hover:transform hover:scale-105`}
                   >
-                    {social.icon}
+                    <div className="p-2 rounded-full bg-gray-600/50 group-hover:bg-gray-600/70 transition-colors duration-300">
+                      {social.icon}
+                    </div>
                     <span className="font-medium">{social.name}</span>
                   </a>
                 ))}
               </div>
             </div>
 
-            {/* Call to Action */}
-            <div className="mt-12 text-center">
-              <div className="bg-gradient-to-r from-blue-500/10 to-green-500/10 rounded-xl p-6 border border-blue-500/20">
-                <h4 className="text-xl font-bold text-white mb-3">Ready to Collaborate?</h4>
-                <p className="text-gray-300 mb-6">
-                  Whether you're interested in discussing engineering innovations, potential collaborations, 
-                  or just want to connect, I'd love to hear from you!
-                </p>
-                <a 
-                  href="mailto:pahlevag@mcmaster.ca"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-green-600 hover:from-blue-600 hover:to-green-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
-                >
-                  <EnvelopeIcon className="w-5 h-5" />
-                  Send Me an Email
-                </a>
-              </div>
+            {/* Professional Availability */}
+            <div className="bg-gradient-to-r from-blue-500/10 to-green-500/10 rounded-xl p-6 border border-blue-500/20">
+              <h4 className="text-xl font-bold text-white mb-3">Professional Availability</h4>
+              <p className="text-gray-300 mb-4">
+                Currently seeking opportunities in:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span>
+                  Electrical Engineering Positions
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-400 mr-2">•</span>
+                  Power Electronics Projects
+                </li>
+                <li className="flex items-center">
+                  <span className="text-purple-400 mr-2">•</span>
+                  Research Collaborations
+                </li>
+                <li className="flex items-center">
+                  <span className="text-orange-400 mr-2">•</span>
+                  Technical Consulting
+                </li>
+              </ul>
             </div>
+          </div>
+
+          {/* Contact Form */}
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="name" className="block text-white font-medium mb-2">
+                    <UserIcon className="w-5 h-5 inline mr-2" />
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-white font-medium mb-2">
+                    <EnvelopeIcon className="w-5 h-5 inline mr-2" />
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                    placeholder="your.email@example.com"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label htmlFor="subject" className="block text-white font-medium mb-2">
+                  <ChatBubbleLeftIcon className="w-5 h-5 inline mr-2" />
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                  placeholder="What would you like to discuss?"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block text-white font-medium mb-2">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={6}
+                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 resize-none"
+                  placeholder="Tell me about your project, collaboration idea, or any questions you have..."
+                />
+              </div>
+              
+              <button
+                type="submit"
+                className="w-full bg-gradient-to-r from-blue-500 to-green-600 hover:from-blue-600 hover:to-green-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+              >
+                <PaperAirplaneIcon className="w-5 h-5" />
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </div>

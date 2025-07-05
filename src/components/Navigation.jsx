@@ -11,6 +11,7 @@ const Navigation = () => {
     { id: 'about', label: 'About', icon: '👨‍💼' },
     { id: 'portfolio', label: 'Solar Car', icon: '🚗' },
     { id: 'seat', label: 'Smart Seat', icon: '🛡️' },
+    { id: 'academic-projects', label: 'Projects', icon: '🔬' },
     { id: 'contact', label: 'Contact', icon: '📧' }
   ];
 

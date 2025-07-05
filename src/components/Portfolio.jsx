@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from '@heroicons/react/24/outline';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 const Portfolio = () => {
   const solarCarProjects = [
@@ -44,7 +44,7 @@ const Portfolio = () => {
             className="bg-white/90 backdrop-blur-sm text-gray-900 px-6 py-3 rounded-full font-semibold flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:bg-white"
           >
             View Project
-            <ExternalLinkIcon className="w-5 h-5" />
+            <ArrowTopRightOnSquareIcon className="w-5 h-5" />
           </a>
         </div>
       </div>
