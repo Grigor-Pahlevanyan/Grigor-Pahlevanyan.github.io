@@ -11,6 +11,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    sourcemap: false,
     rollupOptions: {
       output: {
         manualChunks: undefined,
@@ -19,5 +20,9 @@ export default defineConfig({
         assetFileNames: 'assets/[name]-[hash].[ext]'
       },
     },
+  },
+  esbuild: {
+    jsxFactory: 'React.createElement',
+    jsxFragment: 'React.Fragment',
   },
 })
