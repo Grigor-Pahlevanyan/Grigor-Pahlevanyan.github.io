@@ -55,12 +55,6 @@ function App() {
                 About
               </button>
               <button 
-                onClick={() => scrollToSection('portfolio')}
-                className="text-gray-300 hover:text-white transition-colors duration-300"
-              >
-                Portfolio
-              </button>
-              <button 
                 onClick={() => scrollToSection('accomplishments')}
                 className="text-gray-300 hover:text-white transition-colors duration-300"
               >
