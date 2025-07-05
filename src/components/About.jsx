@@ -195,30 +195,6 @@ const About = () => {
                 icon={AcademicCapIcon}
               />
             </div>
-            {/* Certifications & Awards */}
-            <div>
-              <h4 className="text-2xl font-bold text-white mb-8 flex items-center">
-                <AcademicCapIcon className="w-8 h-8 mr-3 text-yellow-400" />
-                Certifications & Awards
-              </h4>
-              <div className="space-y-4">
-                <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 hover:border-yellow-500/50 transition-all duration-300">
-                  <h5 className="text-lg font-semibold text-white mb-2">Battery Workforce Challenge - Completed</h5>
-                  <p className="text-yellow-400 text-sm mb-2">January 2025</p>
-                  <p className="text-gray-300">Successfully completed intensive battery technology and workforce development program</p>
-                </div>
-                <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 hover:border-yellow-500/50 transition-all duration-300">
-                  <h5 className="text-lg font-semibold text-white mb-2">McMaster Solar Car - Leadership Award</h5>
-                  <p className="text-yellow-400 text-sm mb-2">2021-2024</p>
-                  <p className="text-gray-300">Recognition for outstanding leadership in electrical engineering design and team management</p>
-                </div>
-                <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 hover:border-yellow-500/50 transition-all duration-300">
-                  <h5 className="text-lg font-semibold text-white mb-2">Mechatronics Engineering Program</h5>
-                  <p className="text-yellow-400 text-sm mb-2">2020-Present</p>
-                  <p className="text-gray-300">Dean's List recognition for academic excellence in engineering studies</p>
-                </div>
-              </div>
-            </div>
 
             {/* Technical Competencies */}
             <div>

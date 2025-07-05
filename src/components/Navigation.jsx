@@ -9,9 +9,7 @@ const Navigation = () => {
   const navItems = [
     { id: 'home', label: 'Home', icon: '🏠' },
     { id: 'about', label: 'About', icon: '👨‍💼' },
-    { id: 'portfolio', label: 'Solar Car', icon: '🚗' },
-    { id: 'seat', label: 'Smart Seat', icon: '🛡️' },
-    { id: 'academic-projects', label: 'Projects', icon: '🔬' },
+    { id: 'portfolio', label: 'Portfolio', icon: '�' },
     { id: 'contact', label: 'Contact', icon: '📧' }
   ];
 
