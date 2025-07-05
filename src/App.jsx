@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import heroImage from './assets/hero.jpg';
 
 function App() {
+  console.log('App component: Rendering...');
+  
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
