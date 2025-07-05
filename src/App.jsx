@@ -121,6 +121,19 @@ function App() {
               
               <div className="space-y-6">
                 <div className="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                  <p className="text-blue-400 text-sm font-medium mb-2">May 2025 - present</p>
+                  <h4 className="text-xl font-bold text-white mb-2">
+                    Electrical Designer
+                  </h4>
+                  <p className="text-blue-300 mb-3">L3Harris</p>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• Designing electrical systems and components</li>
+                    <li>• Collaborating with cross-functional teams</li>
+                    <li>• Ensuring compliance with industry standards</li>
+                  </ul>
+                </div>
+
+                <div className="bg-gray-800 p-6 rounded-xl border border-gray-700">
                   <p className="text-blue-400 text-sm font-medium mb-2">May 1, 2024 - August 30, 2024</p>
                   <h4 className="text-xl font-bold text-white mb-2">
                     Power Electronics Technical Program Manager Intern
@@ -292,13 +305,14 @@ function App() {
                 <div>
                   <h4 className="text-2xl font-bold text-white">Battery Workforce Challenge</h4>
                   <p className="text-green-300 font-medium">BMS Hardware Lead</p>
-                  <p className="text-gray-400 text-sm">September 2024 - present</p>
+                  <p className="text-gray-400 text-sm">September 2024 - January 2025</p>
                 </div>
               </div>
               
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Creating hardware components to support BMS functionality. Managing a team of 8 engineers 
-                and working with cross-functional teams to develop innovative battery management solutions.
+                Created hardware components to support BMS functionality. Managed a team of 8 engineers 
+                and worked with cross-functional teams to develop innovative battery management solutions.
+                Successfully completed the challenge in January 2025.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">

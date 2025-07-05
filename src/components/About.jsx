@@ -3,6 +3,17 @@ import { ChevronRightIcon, BriefcaseIcon, AcademicCapIcon } from '@heroicons/rea
 const About = () => {
   const workExperience = [
     {
+      duration: "May 2025 - present",
+      title: "Electrical Designer",
+      company: "L3Harris",
+      responsibilities: [
+        "Designing electrical systems and components for advanced technology solutions",
+        "Collaborating with cross-functional teams to develop innovative electrical designs",
+        "Ensuring compliance with industry standards and specifications",
+        "Supporting product development from concept to implementation"
+      ]
+    },
+    {
       duration: "May 1, 2024 - August 30, 2024",
       title: "Power Electronics Technical Program Manager Intern",
       company: "Tesla",
@@ -28,12 +39,13 @@ const About = () => {
 
   const extracurricular = [
     {
-      duration: "September 2024 - present",
+      duration: "September 2024 - January 2025",
       title: "BMS Hardware Lead",
       company: "Battery Workforce Challenge",
       responsibilities: [
-        "Creating hardware components to support BMS functionality",
-        "Managing a team of 8 engineers and working with cross-functional teams"
+        "Created hardware components to support BMS functionality",
+        "Managed a team of 8 engineers and worked with cross-functional teams",
+        "Successfully completed the challenge in January 2025"
       ]
     },
     {
