@@ -264,11 +264,61 @@ function App() {
 
                 <div className="bg-gray-800 p-4 rounded-xl border border-gray-700 fade-in-up delay-700">
                   <div className="flex justify-between items-center mb-2">
+                    <span className="text-white font-semibold">MATLAB/Simulink</span>
+                    <span className="text-blue-400 font-bold">85%</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full" style={{width: '85%'}}></div>
+                  </div>
+                </div>
+
+                <div className="bg-gray-800 p-4 rounded-xl border border-gray-700 fade-in-up delay-800">
+                  <div className="flex justify-between items-center mb-2">
                     <span className="text-white font-semibold">Embedded Systems</span>
                     <span className="text-blue-400 font-bold">80%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
                     <div className="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full" style={{width: '80%'}}></div>
+                  </div>
+                </div>
+
+                <div className="bg-gray-800 p-4 rounded-xl border border-gray-700 fade-in-up delay-900">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-white font-semibold">CAD Design (Inventor, Fusion 360)</span>
+                    <span className="text-blue-400 font-bold">90%</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full" style={{width: '90%'}}></div>
+                  </div>
+                </div>
+
+                <div className="bg-gray-800 p-4 rounded-xl border border-gray-700 fade-in-up delay-1000">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-white font-semibold">Machine Learning</span>
+                    <span className="text-blue-400 font-bold">70%</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full" style={{width: '70%'}}></div>
+                  </div>
+                </div>
+
+                <div className="bg-gray-800 p-4 rounded-xl border border-gray-700 fade-in-up delay-1100">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-white font-semibold">Control Systems</span>
+                    <span className="text-blue-400 font-bold">80%</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full" style={{width: '80%'}}></div>
+                  </div>
+                </div>
+
+                <div className="bg-gray-800 p-4 rounded-xl border border-gray-700 fade-in-up delay-1200">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-white font-semibold">Project Management</span>
+                    <span className="text-blue-400 font-bold">90%</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full" style={{width: '90%'}}></div>
                   </div>
                 </div>
               </div>
